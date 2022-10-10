@@ -27,6 +27,8 @@ Collection of BADUSB scripts for the flipperzero
 ```
 • Chrome2Discord
   - exfiltrate saved google chrome passwords, send passwords via discord webhook
+• iMessageExfil
+  - exfiltrate iMessages from a MacOS and send via email
 ```
 
 ### 💬 Contact Me 
