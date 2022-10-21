@@ -1,4 +1,4 @@
-REM REM Title:      Windows Passvault exfiltration via Discord Webhook
+REM Title:      Windows Passvault exfiltration via Discord Webhook
 REM Author:     DoobTheGoober
 REM Target:     Windows 10 (Powershell)
 DELAY 500
