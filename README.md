@@ -33,6 +33,11 @@ Collection of BADUSB scripts for the flipperzero
   - exfiltrate saved passwords In windows password vault, and send via discord webhook
 ```
 
+# DISCLAIMER
+This project must not be used for illegal purposes, and is strictly for educational purposes and for people to experiment with. The user takes full responsibility for their own actions.
+
+
+
 ### 💬 Contact Me 
 
 ![Gmail Badge](https://img.shields.io/badge/-doobthegoober@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white)
