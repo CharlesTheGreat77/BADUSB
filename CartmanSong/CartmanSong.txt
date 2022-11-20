@@ -1,0 +1,7 @@
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell $vol=new-object -com wscript.shell ; For($i=0; $i -le 50; $i++){$vol.SendKeys([char]175)}; start "https://youtu.be/s-DQM-1atK0" ;
+ENTER
+DELAY 8000
+STRING f
