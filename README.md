@@ -1,6 +1,5 @@
 # BADUSB
 Collection of BADUSB scripts for the flipperzero
-# does NOT just apply for the flipper
 
 ```
                          ______                     
@@ -26,16 +25,25 @@ Collection of BADUSB scripts for the flipperzero
 # Payloads
 ```
 • Chrome2Discord
-  - exfiltrate saved google chrome passwords, send passwords via discord webhook
+  - exfiltrate saved google chrome passwords, send passwords via discord webhook.
 • iMessageExfil
-  - exfiltrate iMessages from a MacOS and send via email
+  - exfiltrate iMessages from a MacOS and send via email. (Work in Progress)
 • PassVault2Discord
-  - exfiltrate saved passwords In windows password vault, and send via discord webhook
+  - exfiltrate saved passwords In windows password vault, and send via discord webhook.
+• MOAB
+  - exfiltrates wifi passwords, chrome passwords, and passvault passwords, sends it via discord webhook. 
 ```
 
 # DISCLAIMER
 This project must not be used for illegal purposes, and is strictly for educational purposes and for people to experiment with. The user takes full responsibility for their own actions.
 
+# Additional
+• Discord token grabber
+  - https://github.com/CharlesTheGreat77/token2Discord
+
+# Digispark
+• Passvault exfiltration for Digispark
+  - https://github.com/CharlesTheGreat77/DigiPass
 
 
 ### 💬 Contact Me 
