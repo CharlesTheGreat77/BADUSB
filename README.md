@@ -31,7 +31,7 @@ Collection of BADUSB scripts for the flipperzero
 • PassVault2Discord
   - exfiltrate saved passwords In windows password vault, and send via discord webhook.
 • MOAB
-  - exfiltrates wifi passwords, chrome passwords, and passvault passwords, sends it via discord webhook. 
+  - exfiltrates wifi passwords, chrome passwords, and passvault passwords, sends it via discord webhook. (Adding more)
 • Text2Speech
   - opens powershell and speaks the phrase you preset (default is a joke). 
 • CartmanSong
