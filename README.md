@@ -32,6 +32,10 @@ Collection of BADUSB scripts for the flipperzero
   - exfiltrate saved passwords In windows password vault, and send via discord webhook.
 • MOAB
   - exfiltrates wifi passwords, chrome passwords, and passvault passwords, sends it via discord webhook. 
+• Text2Speech
+  - opens powershell and speaks the phrase you preset (default is a joke). 
+• CartmanSong
+  - simply turns the volume up all the way, and opens YouTube to a cartman song "kyles Mom is a b*tch". 
 ```
 
 # DISCLAIMER
