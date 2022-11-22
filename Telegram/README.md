@@ -1,5 +1,6 @@
 # Description
   Exfiltrate wifi passwords, and sends it to your telegram
+  * can extend functionality to exfil. whatever necessary. 
 
 # Setup
   1. Create a bot on telegram with BotFather
