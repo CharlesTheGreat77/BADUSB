@@ -52,7 +52,14 @@ This project must not be used for illegal purposes, and is strictly for educatio
 • Passvault exfiltration for Digispark
   - https://github.com/CharlesTheGreat77/DigiPass
 
-
+# honorable mentions
+  - UberGuidoz
+    https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB
+  - FalsePhilosopher
+    https://github.com/FalsePhilosopher/BadUSB-Playground
+  - Jakoby 
+    https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB
+    * Jakoby does very well in explaining how to make your OWN scripts better than these!
 ### 💬 Contact Me 
 
 ![Gmail Badge](https://img.shields.io/badge/-doobthegoober@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white)
