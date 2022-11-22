@@ -1,5 +1,5 @@
 # Description
-  Exfiltrate wifi passwords, and sends it to your phone number via SMTP (gmail)
+  Exfiltrate wifi passwords, and sends it to your email OR your phone number via SMTP (gmail)
 
 # Setup
   1. Create or use an existing app token gmail generated for you (as you can no longer use your normal password for auth).
