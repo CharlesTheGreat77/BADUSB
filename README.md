@@ -42,15 +42,15 @@ Collection of BADUSB scripts for the flipperzero
 This project must not be used for illegal purposes, and is strictly for educational purposes and for people to experiment with. The user takes full responsibility for their own actions.
 
 # Discord Webhook setup guide
-• YouTube Video
-  - https://m.youtube.com/watch?v=YHTdnl2zKig
+  - YouTube Video
+    https://m.youtube.com/watch?v=YHTdnl2zKig
 # Additional
-• Discord token grabber
-  - https://github.com/CharlesTheGreat77/token2Discord
+  - Discord token grabber
+    https://github.com/CharlesTheGreat77/token2Discord
 
 # Digispark
-• Passvault exfiltration for Digispark
-  - https://github.com/CharlesTheGreat77/DigiPass
+  - Passvault exfiltration for Digispark
+    https://github.com/CharlesTheGreat77/DigiPass
 
 # honorable mentions
   - UberGuidoz
