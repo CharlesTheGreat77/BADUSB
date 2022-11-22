@@ -30,6 +30,10 @@ Collection of BADUSB scripts for the flipperzero
   - exfiltrate iMessages from a MacOS and send via email. (Work in Progress)
 • PassVault2Discord
   - exfiltrate saved passwords In windows password vault, and send via discord webhook.
+• EmailAndTextMessage
+  - exfiltrate passwords to your email or to your phone number.
+• Telegram
+  - exfiltrate passwords and send it to your personal telegram.
 • MOAB
   - exfiltrates wifi passwords, chrome passwords, and passvault passwords, sends it via discord webhook. (Adding more)
 • Text2Speech
