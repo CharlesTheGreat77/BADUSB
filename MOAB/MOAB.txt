@@ -1,3 +1,4 @@
+REM CREDITS: UberGuidoz, thisismyrobot, can't find the person that made the pass manager exfil so till then
 DELAY 500
 GUI r
 DELAY 500
