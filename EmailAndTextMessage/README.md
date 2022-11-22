@@ -7,11 +7,11 @@
   3. Save and move it to your flip 
 
 # Send file to your phone
-  Replace %SEND_TO% with <phoneNumber>@<smsgateway>
+  Replace %SEND_TO% with phoneNumber@smsgateway
   Example:
-     Sprint  - <phoneNumber>@messaging.sprintpcs.com
-     AT&T    - <phoneNumber>@txt.att.net
-     TMobile - <phoneNumber>@tmomail.net
-     Verizon - <phoneNumber>@vtext.com
+     Sprint  - phoneNumber@messaging.sprintpcs.com
+     AT&T    - phoneNumber@txt.att.net
+     TMobile - phoneNumber@tmomail.net
+     Verizon - phoneNumber@vtext.com
 
   * If your provider is NOT provided here, you can use https://freecarrierlookup.com to get exactly what it is, and how it's formatted.
