@@ -24,6 +24,8 @@ Collection of BADUSB scripts for the flipperzero
 ```
 # Payloads
 ```
+• Web2Discord
+  - exfiltrate ALL web browser passwords from a windows pc, and sends them via discord webhook.
 • Chrome2Discord
   - exfiltrate saved google chrome passwords, send passwords via discord webhook.
 • iMessageExfil
