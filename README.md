@@ -1,4 +1,4 @@
-# BADUSB
+# Flipper Zero BADUSB
 Collection of BADUSB scripts for the flipperzero
 
 ```
