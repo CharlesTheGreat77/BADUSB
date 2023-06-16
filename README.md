@@ -51,7 +51,7 @@ This project must not be used for illegal purposes, and is strictly for educatio
   - YouTube Video
     https://m.youtube.com/watch?v=YHTdnl2zKig
 # Additional
-  - Discord token grabber (TAKEN DOWN FOR NOW)
+  - Discord token grabber
     https://github.com/CharlesTheGreat77/token2Discord
 
 # Keylogger (badusb)
