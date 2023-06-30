@@ -33,6 +33,6 @@ Chrome Logins
 
 # Note
 Script does not bypass av, we force it
-
+- mimikatz is flagged after the powershell process is finished from heuristics
 # Mimikatz payload credits
 https://github.com/HernanRodriguez1/MimikatzFUD
