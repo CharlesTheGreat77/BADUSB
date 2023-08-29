@@ -24,11 +24,15 @@ I am not responsible for the usage of this utility, it is simply for researching
 
 # Have fun!
 Additional commands after infection
+
   /tgrizzly
   - exfiltrates discord tokens and saves them to C:\temp\output.txt
+
   /wifi
   - shows saved wifi passwords
+
   /discord <filename>
   - send the file to your discord webhook
+
   /clean
   - removes powershell history
