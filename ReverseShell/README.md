@@ -31,7 +31,7 @@ Additional commands after infection
   /wifi
   - shows saved wifi passwords
 
-  /discord <filename>
+  /discord (filename)
   - send the file to your discord webhook
 
   /clean
