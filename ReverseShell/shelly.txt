@@ -59,7 +59,7 @@ while($0abddb0134484e0ca2c951ce3e99f16c -ge 0){
         }
         elseif ($72b24f293ec941fabe2c084e41efcf4b -match "^/clean$") {
             $bdubsiwiwnbdvank = "Executing cleanup.."
-            wuwudhbdbwb($bdubsiwiwnbdvank)shell
+            wuwudhbdbwb($bdubsiwiwnbdvank)
             kwhhabzbabjeikfn
         }
 
