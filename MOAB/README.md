@@ -1,6 +1,6 @@
 # WORK IN PROGRESS BUT WORKS EFFICIENTLY
 • MOAB.txt is an AIO password exfiltration script.
-  This script currently exfiltrates Wifi passwords, Chrome passwords, and Windows Passvault Passwords, and all browser passwords, then sends each file via discord webhook
+  - wifi passwords, discord token(s), and browser passwords 
 
 # How to
 • All you need to do is specify your discord webhook at the top (%DISCORD_WEBHOOK%) and move the file to your flipper.
