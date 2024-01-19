@@ -64,8 +64,6 @@ https://github.com/CharlesTheGreat77/Mugger
 # honorable mentions
   - UberGuidoz
     https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB
-  - FalsePhilosopher
-    https://github.com/FalsePhilosopher/BadUSB-Playground
   - Jakoby 
     https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB
     * Jakoby does very well in explaining how to make your OWN scripts better than these!
