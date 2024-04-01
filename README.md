@@ -54,6 +54,9 @@ This project must not be used for illegal purposes, and is strictly for educatio
   - Discord token grabber
     https://github.com/CharlesTheGreat77/token2Discord
 
+# hide your payloads 👀
+https://github.com/CharlesTheGreat77/BadSteganography
+
 # Keylogger (badusb)
 https://github.com/CharlesTheGreat77/Mugger
 
