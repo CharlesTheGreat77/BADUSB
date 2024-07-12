@@ -6,14 +6,6 @@
   <p>
     A Collection of Flipper Zero BADUSB Payloads
   </p>
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">Quick Start</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Learn</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  </h4>
 </div>
 
 <br />
