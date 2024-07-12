@@ -315,4 +315,4 @@ I want to give some honor to specific individuals regardless of contribution for
  - [Rocket God](https://github.com/RocketGod-git)
  - [Kavitate](https://github.com/Kavitate)
  - [Derek Jamison](https://github.com/jamisonderek)
- - [Redd](hhttps://github.com/InfoSecREDD)
+ - [Redd](https://github.com/InfoSecREDD)
