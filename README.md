@@ -10,6 +10,9 @@
 
 <br />
 
+![DISCLAIMER](https://github.com/user-attachments/assets/06963c0c-2087-4e9d-a986-9920ef6983f5)
+
+
 <!-- Table of Contents -->
 # Table of Contents 📒
 
