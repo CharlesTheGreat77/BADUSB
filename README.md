@@ -240,7 +240,7 @@ Phone Number Setup for *send_to* variable:
     
     Format: <phonenumber>@smsgateway
     example: 9992221111@tmomail.net
-SMS Gateways for Service Providers can be found <a href="https://gist.github.com/methanoliver/efebfe8f4008e167417d4ab96e5e3cac">here</a>!
+SMS Gateways for Service Providers can be found <a href="https://jagerpro.com/help-center/sms-and-mms-gateway-list/">here</a>!
 
   <ul>
     <li>File Transfer with curl:</li>
