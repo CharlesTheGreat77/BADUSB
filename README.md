@@ -640,6 +640,11 @@ try {
 ```
 </details>
 
+<!-- Payload Testing -->
+# PyDucky
+Quickly test payloads using <a href="https://github.com/CharlesTheGreat77/pyDucky">PyDucky</a> locally. This allows for **efficient** payload development and convenient testing.
+
+
 <!-- Roadmap -->
 ## Roadmap
 
